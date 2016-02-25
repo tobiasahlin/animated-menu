@@ -23,11 +23,11 @@ body {
 }
 
 .menu-overlay.open {
-	transition-delay: 0.05s;
+	transition-delay: 0.03s;
 }
 
 .menu:hover .menu-circle {
-	transform: scale(1.2);
+	transform: scale(1.3);
 }
 
 .menu-circle {
@@ -43,7 +43,7 @@ body {
 }
 
 .menu.open .menu-circle {
-	transform: scale(70);
+	transform: scale(60);
 }
 
 .menu-link {
@@ -57,12 +57,12 @@ body {
 .menu-icon {
 	position: absolute;
   width: 20px;
-  height: 13px;
+  height: 14px;
   margin: auto;
   left: 0;
   top: 0;
   right: 0;
-  bottom: 2px;
+  bottom: 1px;
 }
 
 .menu-line {
@@ -87,7 +87,7 @@ body {
 .menu-line-3 { bottom: 0; }
 
 .menu.open .menu-line-1 {
-  transform: translateY(6.5px) translateY(-50%) rotate(-135deg);
+  transform: translateY(7px) translateY(-50%) rotate(-135deg);
 }
 
 .menu.open .menu-line-2 {
@@ -95,7 +95,7 @@ body {
 }
 
 .menu.open .menu-line-3 {
-  transform: translateY(-6.5px) translateY(50%) rotate(135deg);
+  transform: translateY(-7px) translateY(50%) rotate(135deg);
 }
 
 .menu-overlay {
@@ -103,12 +103,14 @@ body {
 	color: #333;
 	height: 100%;
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
+	bottom: 0;
+	right: 0;
 	opacity: 0;
 	visibility: hidden;
-	transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.2s ease-in-out;
 }
 
 .menu-overlay.open {
