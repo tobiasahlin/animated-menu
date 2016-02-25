@@ -11,6 +11,7 @@ body {
   font-family: Helvetica Neue, arial, sans-serif;
   color: #fff;
   position: relative;
+  overflow: hidden;
 }
 
 .menu {
@@ -19,7 +20,6 @@ body {
   left: 20px;
   height: 46px;
 	width: 46px;
-	z-index: 1000;
 }
 
 .menu-overlay.open {
@@ -40,6 +40,7 @@ body {
 	border-radius: 50%;
 	transform: scale(1);
 	transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+	z-index: 1000;
 }
 
 .menu.open .menu-circle {
@@ -63,6 +64,7 @@ body {
   top: 0;
   right: 0;
   bottom: 1px;
+  z-index: 1002;
 }
 
 .menu-line {
@@ -111,9 +113,20 @@ body {
 	opacity: 0;
 	visibility: hidden;
 	transition: opacity 0.2s ease-in-out;
+	z-index: 1001;
 }
 
 .menu-overlay.open {
 	opacity: 1;
 	visibility: visible;
+}
+
+.menu-overlay a {
+	color: #333;
+	font-weight: 600;
+	font-size: 32px;
+	padding: 2%;
+	margin:  25% 1% 0;
+	display: inline-block;
+	
 }
