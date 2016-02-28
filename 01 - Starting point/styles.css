@@ -1,0 +1,13 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ff685d;
+  font-family: Helvetica Neue, Arial, sans-serif;
+  color: #fff;
+  overflow: hidden;
+}

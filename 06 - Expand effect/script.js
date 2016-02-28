@@ -5,5 +5,5 @@ $(function() {
     $(".menu").toggleClass("open");
     $(".menu-overlay").toggleClass("open");
   });
-	
+
 });

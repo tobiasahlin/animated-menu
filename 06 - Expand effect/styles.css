@@ -1,0 +1,114 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ff685d;
+  font-family: Helvetica Neue, arial, sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+.menu {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 46px;
+	width: 46px;
+}
+
+.menu-circle {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  z-index: 1000;
+}
+
+.menu:hover .menu-circle {
+  transform: scale(1.4);
+}
+
+.menu.open .menu-circle {
+  transform: scale(60);
+}
+
+.menu-link {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1002;
+}
+
+.menu-icon {
+	position: absolute;
+  width: 20px;
+  height: 14px;
+  margin: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 1px;
+}
+
+.menu-line {
+  background-color: #333;
+  height: 2px;
+  width: 100%;
+  display: block;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+}
+
+.menu-line-1 { top: 0; }
+
+.menu-line-2 {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.menu-line-3 { bottom: 0; }
+
+.menu-overlay {
+  background-color: #fff;
+  color: #333;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 1001;
+}
+
+.menu-overlay.open {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.03s;
+}
+
+.menu-overlay a {
+  color: #333;
+  font-weight: 600;
+  font-size: 32px;
+  padding: 2%;
+  margin:  25% 1% 0;
+  display: inline-block;
+}
