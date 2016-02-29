@@ -17,7 +17,7 @@ body {
   top: 20px;
   left: 20px;
   height: 46px;
-	width: 46px;
+  width: 46px;
 }
 
 .menu-link {
@@ -30,7 +30,7 @@ body {
 }
 
 .menu-icon {
-	position: absolute;
+  position: absolute;
   width: 20px;
   height: 14px;
   margin: auto;
