@@ -33,6 +33,10 @@ body {
   z-index: 1000;
 }
 
+.menu:hover .menu-circle {
+  transform: scale(1.4);
+}
+
 .menu-link {
 	width: 100%;
 	height: 100%;
@@ -84,10 +88,10 @@ body {
   bottom: 0;
   right: 0;
   opacity: 0;
-  visibility: hidden;
   text-align: center;
   transition: opacity 0.2s ease-in-out;
   z-index: 1001;
+  visibility: hidden;
 }
 
 .menu-overlay {
