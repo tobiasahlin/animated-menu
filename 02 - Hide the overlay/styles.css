@@ -57,6 +57,8 @@ body {
   text-align: center;
   transition: opacity 0.2s ease-in-out;
   z-index: 1001;
+  opacity: 0;
+  visibility: hidden:;
 }
 
 .menu-overlay a {

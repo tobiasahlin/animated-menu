@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ff685d;
-  font-family: Helvetica Neue, arial, sans-serif;
+  font-family: Helvetica Neue, Arial, sans-serif;
   color: #fff;
   overflow: hidden;
 }
@@ -17,7 +17,25 @@ body {
   top: 20px;
   left: 20px;
   height: 46px;
-	width: 46px;
+  width: 46px;
+}
+
+.menu-link {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1002;
+}
+
+.menu-icon {
+  position: absolute;
+  width: 20px;
+  height: 14px;
+  margin: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 1px;
 }
 
 .menu-circle {
@@ -27,30 +45,29 @@ body {
   position: absolute;
   border-radius: 50%;
   transform: scale(1);
-  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   z-index: 1000;
 }
 
-.menu:hover .menu-circle {
-  transform: scale(1.4);
+.menu-overlay {
+  background-color: #fff;
+  color: #333;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 1001;
+  opacity: 0;
+  visibility: hidden:;
 }
 
-.menu-link {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	z-index: 1002;
-}
-
-.menu-icon {
-	position: absolute;
-  width: 20px;
-  height: 14px;
-  margin: auto;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 1px;
+.menu-overlay a {
+  color: #333;
+  font-weight: 600;
+  font-size: 32px;
+  padding: 2%;
+  margin:  25% 1% 0;
+  display: inline-block;
 }
 
 .menu-line {
@@ -72,29 +89,4 @@ body {
 
 .menu-line-3 { bottom: 0; }
 
-.menu-overlay {
-  background-color: #fff;
-  color: #333;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  opacity: 0;
-  text-align: center;
-  transition: opacity 0.2s ease-in-out;
-  z-index: 1001;
-  visibility: hidden;
-}
-
-.menu-overlay {
-  opacity: 1;
-  visibility: visible;
-}
-
-.menu-overlay a {
-  color: #333;
-  font-weight: 600;
-  font-size: 32px;
-  padding: 2%;
-  margin:  25% 1% 0;
-  display: inline-block;
-}
+.menu:hover .menu-circle { transform: scale(1.4); }

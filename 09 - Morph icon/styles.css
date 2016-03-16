@@ -46,6 +46,7 @@ body {
   border-radius: 50%;
   transform: scale(1);
   z-index: 1000;
+  transition: all 0.2s ease-in-out;
 }
 
 .menu-overlay {
@@ -57,6 +58,8 @@ body {
   text-align: center;
   transition: opacity 0.2s ease-in-out;
   z-index: 1001;
+  opacity: 0;
+  visibility: hidden:;
 }
 
 .menu-overlay a {
@@ -66,4 +69,45 @@ body {
   padding: 2%;
   margin:  25% 1% 0;
   display: inline-block;
+}
+
+.menu-line {
+  background-color: #333;
+  height: 2px;
+  width: 100%;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.menu-line-1 { top: 0; }
+
+.menu-line-2 {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.menu-line-3 { bottom: 0; }
+
+.menu:hover .menu-circle { transform: scale(1.4); }
+
+.menu-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu.open .menu-circle { 
+  transform: scale(60);
+}
+
+.menu.open .menu-line-2 { opacity: 0; }
+
+.menu.open .menu-line-1 {
+  transform: translateY(7px) translateY(-50%) rotate(-45deg);
+}
+
+.menu.open .menu-line-3 {
+  transform: translateY(-7px) translateY(50%) rotate(45deg);
 }
