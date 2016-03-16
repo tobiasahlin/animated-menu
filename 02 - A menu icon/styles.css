@@ -56,3 +56,25 @@ body {
 }
 
 .menu-line-3 { bottom: 0; }
+
+.menu-overlay {
+  background-color: #fff;
+  color: #333;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 1001;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu-overlay a {
+  color: #333;
+  font-weight: 600;
+  font-size: 32px;
+  padding: 2%;
+  margin:  25% 1% 0;
+  display: inline-block;
+}

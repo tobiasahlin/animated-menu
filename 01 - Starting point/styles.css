@@ -11,3 +11,59 @@ body {
   color: #fff;
   overflow: hidden;
 }
+
+.menu {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 46px;
+  width: 46px;
+}
+
+.menu-link {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1002;
+}
+
+.menu-icon {
+  position: absolute;
+  width: 20px;
+  height: 14px;
+  margin: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 1px;
+}
+
+.menu-circle {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(1);
+  z-index: 1000;
+}
+
+.menu-overlay {
+  background-color: #fff;
+  color: #333;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 1001;
+}
+
+.menu-overlay a {
+  color: #333;
+  font-weight: 600;
+  font-size: 32px;
+  padding: 2%;
+  margin:  25% 1% 0;
+  display: inline-block;
+}
