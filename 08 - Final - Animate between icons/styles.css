@@ -26,7 +26,6 @@ body {
   height: 100%;
   position: absolute;
   border-radius: 50%;
-  transform: scale(1);
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   z-index: 1000;
 }
@@ -95,10 +94,6 @@ body {
   height: 100%;
   width: 100%;
   position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   opacity: 0;
   visibility: hidden;
   text-align: center;
