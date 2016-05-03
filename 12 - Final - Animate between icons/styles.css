@@ -31,7 +31,7 @@ body {
 }
 
 .menu:hover .menu-circle {
-  transform: scale(1.4);
+  transform: scale(1.5);
 }
 
 .menu.open .menu-circle {
